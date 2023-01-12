@@ -14,3 +14,18 @@ remove duplicated
 find dupplicate and missing number sum 
 
 [1,2,4,4,5,6] missing is 3 and duplicate
+
+
+ Create Balanced Parentheses
+ ___
+ 
+ Write a function to add parentheses so that all opening and closing parentheses have matching counterparts. 
+ You will do this by appending parentheses to the beginning or end of the string. 
+ The result should contain the original string and be of minimal length.
+  
+ The input will be a string of varying length, only containing '(' and/or ')'.
+ Ex:
+ "))" outputs >> "(())"
+ ")(" outputs >> "()()"
+ "))))(()(" outputs >> "(((())))(()())"
+ 
