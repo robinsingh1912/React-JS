@@ -12,8 +12,9 @@ snake_case to camelCase and vice versa
 remove duplicated
 
 find dupplicate and missing number sum 
+___
 
-[1,2,4,4,5,6] missing is 3 and duplicate
+[1,2,4,4,5,6] missing is 3 and duplicate is 4
 
 
  Create Balanced Parentheses
