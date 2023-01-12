@@ -43,7 +43,23 @@ export default function Parent() {
 }
 
 ```
+5. functional vs class components
+- functional components are plain javascript function | class components require to extend React.Component
+- no render method | It has render method which bassicaly return JSX
+- represend ui and use hooks | react lifecycle methods and state can we used
+- no need to contructor | need to constructor 
+- no need to bind this | need to bind eventhandlers
 
+6. Shadow DOM vs Virtual DO
+- An API to attach hidden DOM to an element for encapculation purpose | An in-memory representation of Actual DOM
+- In short, the shadow DOM is a browser technology whose main objective is to provide encapsulation when creating elements. On the other hand, the virtual DOM is managed by JavaScript libraries—e.g., React—and it’s mostly a strategy to optimize performance.
+
+7. VDOM ?? How it works ?? Diffing Algorithim, Reconciliation ??
+- https://reactjs.org/docs/reconciliation.html 
+
+8. what is context API? can we have multiple provider ? example ?
+- Context is a built-in API introduced in React. It makes it possible to pass data from parent to children nested deep down the component tree directly, instead of passing it down through a chain of props. 
+- Yes we can have multiple provider
 
 
 
