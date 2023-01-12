@@ -64,7 +64,17 @@ export default function Parent() {
 
 
 *. show promise chaining 
+
 *. Promise.all vs promise.race
+
+*. Desgin patterns
+- HOC pattern
+- Render props pattern
+- Hooks pattern
+- Compound pattern
+
+
+
 
 
  ## coding 
