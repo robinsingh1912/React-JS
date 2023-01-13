@@ -62,7 +62,40 @@ export default function Parent() {
 - Yes we can have multiple provider
 
 
+*. Error boundries
+- Error boundaries are React components which catch JavaScript errors anywhere in our app, log those errors, and display a fallback UI. It does not break the whole app component tree and only renders the fallback UI whenever an error occurred in a component. Error boundaries catch errors during rendering in component lifecycle methods, and constructors of the whole tree below them.
+> **NOTE** : Sometimes, it is not possible to catch Error boundaries in React application. These are:
 
+ - Event handlers
+ - Asynchronous code (e.g. setTimeout or requestAnimationFrame callbacks)
+ - Server-side rendering
+ - Errors are thrown in the error boundary itself rather than its children.
+ - 
+example :
+```
+class ErrorBoundary extends React.Component {  
+  constructor(props) {  
+    super(props);  
+    this.state = { hasError: false };  
+  }  
+  static getDerivedStateFromError(error) {  
+    // It will update the state so the next render shows the fallback UI.  
+    return { hasError: true };  
+  }  
+  componentDidCatch(error, info) {  
+    // It will catch error in any component below. We can also log the error to an error reporting service.  
+    logErrorToMyService(error, info);  
+  }  
+  render() {  
+    if (this.state.hasError) {  
+        return (  
+        <div>Something is wrong.</div>;  
+    );  
+    }  
+    return this.props.children;   
+  }  
+}  
+```
 *. show promise chaining 
 
 *. Promise.all vs promise.race
